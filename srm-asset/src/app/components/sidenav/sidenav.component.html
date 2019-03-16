@@ -7,9 +7,9 @@
 
   <div class="sidenav-links">
     <ul>
-      <li><a routerLink="/management">dashboard</a></li>
-      <li><a routerLink="/account">account</a></li>
-      <li><a routerLink="/anticipation">anticipation</a></li>
+      <li (click)="navigateTo('management')"><a routerLink="/management">Painel de Gestão</a> <img src="{{ globeIcon }}" alt=""></li>
+      <li (click)="navigateTo('account')"><a routerLink="/account">Conta Digital</a> <img src="{{ atIcon }}" alt=""></li>
+      <li (click)="navigateTo('anticipation')"><a routerLink="/anticipation">Ant. de Recebíveis</a> <img src="{{ graphIcon }}" alt=""></li>
     </ul>
   </div>
 

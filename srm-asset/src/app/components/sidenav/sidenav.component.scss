@@ -1,6 +1,9 @@
+@import '../../../styles/_variables.scss';
+
 .sidenav-container {
-  border: 1px solid black;
-  width: 20%;
+  width: 100%;
+  height: 100%;
+  border-right: 2px solid $grey1;
 
   display: flex;
   flex-direction: column;
@@ -9,10 +12,6 @@
   position: relative;
   left: 0;
   top: 0;
-
-  div {
-    border: 1px solid black;
-  }
 
   .sidenav-searchbar {
     height: 70px;
@@ -39,6 +38,45 @@
 
       &:focus {
         outline: none;
+      }
+    }
+  }
+
+  .sidenav-links {
+    background-color: $navyBlue1;
+    height: 100%;
+
+    ul {
+      box-sizing: border-box;
+      list-style: none;
+      
+      li {
+        width: 91%;
+        position: relative;
+        right: 10px;
+
+        padding: 15px;
+        border-bottom: 2px solid $lightBlue1;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        &:hover {
+          cursor: pointer;
+          font-weight: bolder;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          padding-top: 7px;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
   }
