@@ -9,7 +9,8 @@ import { AnticipationOfReceivablesComponent } from '../views/anticipation-of-rec
 const routes: Routes = [
   {
     path: '',
-    component: DashboardManagementComponent
+    redirectTo: 'management',
+    pathMatch: 'full'
   },
 
   {
