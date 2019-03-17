@@ -1,6 +1,86 @@
 @import '../../../styles/_variables.scss';
 
 .dashboard-management {
-  width: 100%;
+  width: 90%;
   padding: 15px;
+  color: $navyBlue1;
+
+  .management-header {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+
+      .globe-icon {
+        height: 40px;
+        margin: 5px;
+      }
+  
+      h1 {
+        margin: 5px;
+      }
+    }
+
+    .products {
+      width: 30%;
+
+      display: flex;
+      justify-content: space-between;
+
+      padding-top: 15px;
+
+      .select {
+        border: 1px solid $lightBlue2;
+        border-radius: 0px;
+
+        height: 30px;
+        width: 185px;
+
+        position: relative;
+        top: -12px;
+
+        background-color: transparent;
+        padding: 10px;
+
+        text-align: center;
+        font-size: 13px;
+        font-family: 'OpenSans', sans-serif;
+        color: lightslategray;
+
+        .arrows {
+          height: 20px;
+          width: 20px;
+
+          position: relative;
+          top: 2px;
+          left: 55px;
+        }
+
+        select {
+          -webkit-appearance: none;
+          appearance: none;
+          border: none;
+          background-color: transparent;
+          padding: 10px;
+          position: relative;
+          top: -5px;
+          font-size: 12px;
+
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
