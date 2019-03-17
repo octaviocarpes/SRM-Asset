@@ -1,0 +1,61 @@
+@import '../../../styles/_variables.scss';
+.shortcuts {
+  background-color: white;
+
+  width: 60%;
+  box-shadow: 0.5px 1px 5px lightslategray;
+
+  position: relative;
+  top: 50px;
+
+  .header {
+    width: 100%;
+
+    h2 {
+      width: 90%;
+      padding: 15px;
+    }
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .content {
+    display: flex;
+
+    button {
+      height: 40px;
+      width: 150px;
+      border: 1px solid $lightBlue1;
+      
+      margin: 5px;
+      padding: 10px;
+
+      font-size: 11px;
+      color: lightslategray;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .operational {
+      width: 60%;
+      padding: 10px;
+      border-right: 1px solid lightgrey;
+
+      h4 {
+        padding: 10px;
+      }
+
+      .operational-content {
+        display: grid;
+        grid-template-columns: 170px 170px;
+        grid-template-rows: 55px;
+      }
+    }
+  }
+}
