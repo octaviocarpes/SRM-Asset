@@ -77,6 +77,23 @@
           width: 30px;
           height: 30px;
         }
+
+        .selected-view {
+          width: 20px;
+          height: 20px;
+          background-color: $grey2;
+          border-left: 2px solid $grey1;
+          border-bottom: 2px solid $grey1;
+          transform: rotate(45deg);
+
+          position: relative;
+          left: 27px;
+          top: 5px
+        }
+
+        .hidden {
+          visibility: hidden
+        }
       }
     }
   }

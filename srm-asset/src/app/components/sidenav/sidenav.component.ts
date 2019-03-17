@@ -18,6 +18,12 @@ export class SidenavComponent implements OnInit {
     this.router.navigateByUrl(route)
   }
 
+  validateRoute(route: String) {
+    if (route == this.router.url) { 
+      return true
+    } return false
+  }
+
   ngOnInit() {
   }
 

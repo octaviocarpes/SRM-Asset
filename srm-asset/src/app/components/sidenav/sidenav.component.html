@@ -7,9 +7,23 @@
 
   <div class="sidenav-links">
     <ul>
-      <li (click)="navigateTo('management')"><a routerLink="/management">Painel de Gestão</a> <img src="{{ globeIcon }}" alt=""></li>
-      <li (click)="navigateTo('account')"><a routerLink="/account">Conta Digital</a> <img src="{{ atIcon }}" alt=""></li>
-      <li (click)="navigateTo('anticipation')"><a routerLink="/anticipation">Ant. de Recebíveis</a> <img src="{{ graphIcon }}" alt=""></li>
+      <li (click)="navigateTo('management')">
+        <div [ngClass]="{ 'selected-view': true, 'hidden': !validateRoute('/management') }"></div>
+        <a routerLink="/management">Painel de Gestão</a>
+        <img src="{{ globeIcon }}" alt="">
+      </li>
+
+      <li (click)="navigateTo('account')">
+        <div [ngClass]="{ 'selected-view': true, 'hidden': !validateRoute('/account') }"></div>
+        <a routerLink="/account">Conta Digital</a>
+        <img src="{{ atIcon }}" alt="">
+      </li>
+
+      <li (click)="navigateTo('anticipation')">
+        <div [ngClass]="{ 'selected-view': true, 'hidden': !validateRoute('/anticipation') }"></div>
+        <a routerLink="/anticipation">Ant. de Recebíveis</a>
+        <img src="{{ graphIcon }}" alt="">
+      </li>
     </ul>
   </div>
 
