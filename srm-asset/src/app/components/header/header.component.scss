@@ -1,4 +1,8 @@
 @import '../../../styles/_variables.scss';
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../../../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
 
 .header-container {
   background-color: white;
@@ -28,6 +32,67 @@
 
     padding-top: 25px; 
 
+    p {
+      font-size: 14px;
+      padding-top: 2px;
+    }
+
+    .select {
+      border: 1px solid $lightBlue2;
+      border-radius: 0px;
+
+      position: relative;
+      top: -12px;
+
+      background-color: white;
+      padding: 10px;
+
+      font-size: 13px;
+      font-family: 'OpenSans', sans-serif;
+      color: lightslategray;
+
+      .arrows {
+        height: 20px;
+        width: 20px;
+
+        position: relative;
+        top: 2px;
+      }
+
+      select {
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+        position: relative;
+        top: -5px;
+        font-size: 12px;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      select::-ms-expand {
+        display: none;
+        border: none;
+        background-color: transparent;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
     .user-header {
       width: 45%;
       display: flex;
@@ -47,9 +112,21 @@
 
         padding-top: 12px;
 
+        p {
+          padding-top: 2px;
+        }
+
         img {
           width: 20px;
           height: 20px;
+        }
+
+        .arrows {
+          height: 20px;
+          width: 20px;
+
+          position: relative;
+          top: 2px;
         }
       }
 

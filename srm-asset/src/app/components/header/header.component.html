@@ -2,16 +2,20 @@
   <img src="{{ logo }}" alt="">
   <div class="right-content">
     <p>Grupo Econômico:</p>
-    <select name="vision" id="">
-      <option value="" selected>Visão Agregada 1</option>
-      <option value="">Visão Agregada 2</option>
-      <option value="">Visão Agregada 3</option>
-    </select>
+    <div class="select" (click)="openSelect()">
+        <select name="vision" id="select">
+          <option value="" selected>Visão Agregada 1</option>
+          <option value="">Visão Agregada 2</option>
+          <option value="">Visão Agregada 3</option>
+        </select>
+        <img class="arrows" src="{{ arrows }}" alt="">
+    </div>
 
     <div class="user-header">
       <div class="user">
         <img src="{{ user }}" alt="">
         <p>Sandra Oliveira</p>
+        <img class="arrows" src="{{ arrows }}" alt="">
       </div>
       <div class="notification">
         <img src="{{ bell }}" alt="">

@@ -12,7 +12,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  openSelect() {
+    const select = document.getElementById('select')
+    select.click();
+  }
+
   logo = require('src/assets/images/logo.png')
   user = require('src/assets/images/user.png')
   bell = require('src/assets/images/bell.png')
+  arrows = require('src/assets/images/down-icon.png')
 }
