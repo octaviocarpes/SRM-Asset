@@ -1,0 +1,26 @@
+@import '../../../styles/_variables.scss';
+
+.alerts {
+  margin-left: 30px;
+  background-color: white;
+
+  width: 200%;
+  box-shadow: 0.5px 1px 5px lightslategray;
+
+  position: relative;
+  top: 50px;
+
+  color: $navyBlue1;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      width: 90%;
+      padding: 15px;
+    }
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid lightgrey;
+  }
+}

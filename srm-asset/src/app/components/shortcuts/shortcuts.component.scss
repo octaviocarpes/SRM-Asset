@@ -2,7 +2,7 @@
 .shortcuts {
   background-color: white;
 
-  width: 60%;
+  width: 100%;
   box-shadow: 0.5px 1px 5px lightslategray;
 
   position: relative;
@@ -30,7 +30,7 @@
       margin: 5px;
       padding: 10px;
 
-      font-size: 11px;
+      font-size: 12px;
       color: lightslategray;
 
       &:focus {
@@ -54,6 +54,22 @@
       .operational-content {
         display: grid;
         grid-template-columns: 170px 170px;
+        grid-template-rows: 55px;
+      }
+    }
+
+    .general {
+      width: 40%;
+      padding: 10px;
+      border-right: 1px solid lightgrey;
+
+      h4 {
+        padding: 10px;
+      }
+
+      .general-content {
+        display: grid;
+        grid-template-columns: 170px;
         grid-template-rows: 55px;
       }
     }
