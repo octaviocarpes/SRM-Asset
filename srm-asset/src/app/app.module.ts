@@ -7,10 +7,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './router/app-routing.module';
 
 import { SidenavComponent } from './components/sidenav/sidenav.component';
-import { DashboardManagementComponent } from './components/dashboard-management/dashboard-management.component';
-import { DigitalAccountComponent } from './components/digital-account/digital-account.component';
-import { AnticipationOfReceivablesComponent } from './components/anticipation-of-receivables/anticipation-of-receivables.component';
+import { DashboardManagementComponent } from './views/dashboard-management/dashboard-management.component'
+import { DigitalAccountComponent } from './views/digital-account/digital-account.component';
+import { AnticipationOfReceivablesComponent } from './views/anticipation-of-receivables/anticipation-of-receivables.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { ShortcutsComponent } from './components/shortcuts/shortcuts.component';
+import { AlertsComponent } from './components/alerts/alerts.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { HeaderComponent } from './components/header/header.component';
     DashboardManagementComponent,
     DigitalAccountComponent,
     AnticipationOfReceivablesComponent,
-    HeaderComponent
+    HeaderComponent,
+    BreadcrumbComponent,
+    ShortcutsComponent,
+    AlertsComponent
   ],
   imports: [
     BrowserModule,
