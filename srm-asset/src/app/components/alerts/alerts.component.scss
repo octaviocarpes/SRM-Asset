@@ -4,7 +4,7 @@
   margin-left: 30px;
   background-color: white;
 
-  width: 200%;
+  width: 130%;
   box-shadow: 0.5px 1px 5px lightslategray;
 
   position: relative;
@@ -22,5 +22,92 @@
     }
     padding: 15px 0px 15px 0px;
     border-bottom: 1px solid lightgrey;
+
+    p {
+      width: 30%;
+      color: $lightBlue1;
+
+      position: relative;
+      top: 20px;
+
+      font-size: 14px;
+    }
+  }
+
+  .content {
+    ul {
+      margin-top: 15px;
+      list-style: none;
+      
+      li {
+        width: 70%;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+
+        display: flex;
+        justify-content: space-between;
+
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        padding-top: 55px;
+
+        .select {
+          border: 1px solid $lightBlue2;
+          border-radius: 0px;
+  
+          height: 30px;
+          width: 185px;
+  
+          position: relative;
+          top: -16px;
+  
+          background-color: transparent;
+          padding: 10px;
+  
+          text-align: center;
+          font-size: 13px;
+          font-family: 'OpenSans', sans-serif;
+          color: lightslategray;
+  
+          .arrows {
+            height: 20px;
+            width: 20px;
+  
+            position: relative;
+            top: 2px;
+            left: 55px;
+          }
+  
+          select {
+            -webkit-appearance: none;
+            appearance: none;
+            border: none;
+            background-color: transparent;
+            padding: 10px;
+            position: relative;
+            top: -5px;
+            font-size: 12px;
+  
+            &:focus {
+              outline: none;
+            }
+  
+            &:hover {
+              cursor: pointer;
+            }
+          }
+  
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .borderless {
+        border: none;
+      }
+    }
   }
 }

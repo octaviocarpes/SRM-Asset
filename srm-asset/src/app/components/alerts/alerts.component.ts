@@ -9,6 +9,8 @@ export class AlertsComponent implements OnInit {
 
   constructor() { }
 
+  arrows = require('src/assets/images/down-icon.png')
+
   ngOnInit() {
   }
 
