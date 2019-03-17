@@ -10,6 +10,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { DashboardManagementComponent } from './components/dashboard-management/dashboard-management.component';
 import { DigitalAccountComponent } from './components/digital-account/digital-account.component';
 import { AnticipationOfReceivablesComponent } from './components/anticipation-of-receivables/anticipation-of-receivables.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AnticipationOfReceivablesComponent } from './components/anticipation-of
     SidenavComponent,
     DashboardManagementComponent,
     DigitalAccountComponent,
-    AnticipationOfReceivablesComponent
+    AnticipationOfReceivablesComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
